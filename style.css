@@ -4,15 +4,20 @@ html{
 
 body{
     background-color: #f2f2f2;
+    background-image: url(images/tubosensaio_Prancheta\ 1.png);
+    background-repeat: repeat-y;
+    background-size: cover;
     justify-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+
+
 .container{
-    margin-left: inherit;
-    margin-right: inherit;
+    margin-right: 40px;
+    margin-left: 40px;
     width: 100%;
 
 }
@@ -21,16 +26,17 @@ header{
   
     height: 118px;
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 20px;
    
-} 
+}
+
 
 nav{
     background-color:#2a9d8f;
     height: 50px;
     overflow: hidden;
     justify-content: left;
-   
+    position: sticky;
 }
 
 
@@ -54,18 +60,45 @@ nav a.active{
     color: white;
 }
 
+.caixaimagemtopo{
+    width: 100%;
+    height: 500px;
+    position: static;
+    background-image: url("images/Episodios/ep1cel.png");
+    margin-top: 5px;
+    bac
+
+}
+
+
 main{
     height: 400px;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 400px;
     display: inline-block;
     align-items: center;
     width: 100%;
     margin-bottom: 40px;
-
+    
   
 }
+
+.preload {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color:#264653;
+    background-image: url("images/logo.png");
+    background-size: 354px 230px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 
 
 
@@ -181,7 +214,7 @@ a{
       max-height: 200px;
       margin-top: 15px;
       border: 8px solid #264653 ;
-      bor
+      float: center;
   }
   figcaption{
       font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -203,3 +236,22 @@ a{
       justify-content: center;
       align-items: center;
   }
+
+  .imgpodcont {
+    float: left;
+  }
+  
+  .image {
+    display: block
+  }
+  
+  .caption {
+    display: block;
+    width: 100%;
+    text-align: center; //assuming centered captions
+    margin-bottom: 40px;
+  }
+  main .caixadetexto figure{
+      display: inline-block;
+  }
+ 
