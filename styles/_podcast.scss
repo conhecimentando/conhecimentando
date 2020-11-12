@@ -1,0 +1,56 @@
+.home{
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.conteudopodcast{
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 15% repeat(1, minmax(5rem, 1fr)) 15%;
+    grid-template-rows: 1fr 2fr 5fr 1fr;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+
+    .capapod{
+        grid-column: 1/4;
+        grid-row: 1/4 ;
+        width: 100%;
+    }
+
+    .caixatextopod{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        background-color: #f2f2f2;
+     
+
+        .textopod{
+            margin-left: 10%;
+            margin-right: 10%;
+            h1{
+                padding-bottom: 6rem;
+                padding-top: 5rem;
+            }
+
+
+            .episodios{
+                margin-top: 10rem;
+
+                .ep{
+                    transition: all 1s ease;
+                    padding: 1rem;
+                }
+
+                .ep:hover{
+                    transform: scale(1.1)
+                }
+
+
+            }
+
+            padding-bottom: 10rem;
+        }
+    }
+}
